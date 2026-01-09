@@ -1,0 +1,28 @@
+{
+  "name": "qa-automation-cypress-portfolio",
+  "version": "1.0.0",
+  "description": "Portfólio profissional de automação E2E com Cypress e app demo local",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "demo:start": "node apps/demo/server.js",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "npm run lint && npm run ci",
+    "ci": "start-server-and-test demo:start http://localhost:3000 cy:run"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "cypress": "^13.13.3",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-cypress": "^2.15.1",
+    "mochawesome": "^7.1.3",
+    "prettier": "^3.3.3",
+    "start-server-and-test": "^2.0.4"
+  }
+}

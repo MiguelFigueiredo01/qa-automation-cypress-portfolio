@@ -1,0 +1,22 @@
+node_modules
+.DS_Store
+.env
+cypress/screenshots
+cypress/videos
+reports
+coverage
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp
+.pnp.js
+
+# Cypress downloads
+cypress/downloads
+
+# build
+/dist
+
+# Logs
+logs
+*.log
