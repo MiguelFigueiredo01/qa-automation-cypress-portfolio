@@ -1,0 +1,14 @@
+node_modules/
+.cache/
+.DS_Store
+
+# Cypress artifacts
+cypress/screenshots/
+cypress/videos/
+cypress/reports/
+
+# Logs
+npm-debug.log*
+
+# OS
+Thumbs.db
