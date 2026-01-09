@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Demo QA</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="dashboard-header">
+        <div>
+          <h1 data-cy="welcome">Bem-vindo(a)!</h1>
+          <p class="subtitle">Itens recentes do seu workspace.</p>
+        </div>
+        <button class="ghost" data-cy="logout">Sair</button>
+      </header>
+
+      <section class="card">
+        <h2>Itens monitorados</h2>
+        <div id="items" class="items-grid"></div>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>

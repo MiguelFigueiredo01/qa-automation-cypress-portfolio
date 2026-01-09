@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Demo QA</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <h1>Entrar</h1>
+        <p class="subtitle">Acesse com um usuário de demonstração.</p>
+        <form id="login-form">
+          <label>
+            Email
+            <input type="email" data-cy="email" name="email" required />
+          </label>
+          <label>
+            Senha
+            <input type="password" data-cy="password" name="password" required />
+          </label>
+          <button type="submit" data-cy="submit">Entrar</button>
+          <p class="error" data-cy="error"></p>
+        </form>
+      </section>
+      <section class="hint">
+        <h2>Credenciais demo</h2>
+        <p>Email: ana.pereira@example.com</p>
+        <p>Senha: Password123!</p>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>
