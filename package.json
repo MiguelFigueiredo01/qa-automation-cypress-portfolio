@@ -1,0 +1,33 @@
+{
+  "name": "qa-automation-cypress-portfolio",
+  "version": "1.0.0",
+  "description": "Portfólio de automação de testes com Cypress e aplicação demo local.",
+  "main": "apps/demo/src/server.js",
+  "scripts": {
+    "demo:start": "node apps/demo/src/server.js",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "npm run lint && npm run ci",
+    "ci": "start-server-and-test demo:start http://localhost:3000 cy:run"
+  },
+  "keywords": [
+    "qa",
+    "automation",
+    "cypress",
+    "testing"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "cypress": "^13.13.1",
+    "eslint": "^9.9.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-cypress": "^3.5.0",
+    "prettier": "^3.3.3",
+    "start-server-and-test": "^2.0.4"
+  }
+}

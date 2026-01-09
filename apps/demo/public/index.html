@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Demo QA - Cypress</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container" data-cy="app">
+      <header class="header">
+        <h1 data-cy="app-title">Fluxo de tarefas</h1>
+        <p class="subtitle">
+          Demo local para validar UI e API com Cypress
+        </p>
+      </header>
+
+      <section class="card" data-cy="todo-card">
+        <form data-cy="todo-form">
+          <label class="label" for="todo-title">Nova tarefa</label>
+          <div class="form-row">
+            <input
+              id="todo-title"
+              name="todo-title"
+              type="text"
+              placeholder="Descreva a tarefa"
+              data-cy="todo-input"
+              required
+            />
+            <button class="primary" type="submit" data-cy="todo-submit">
+              Adicionar
+            </button>
+          </div>
+          <p class="hint" data-cy="todo-hint">
+            Use intercepts + aliases para sincronizar os testes.
+          </p>
+        </form>
+      </section>
+
+      <section class="card" data-cy="todo-list-card">
+        <div class="card-header">
+          <h2>Itens recentes</h2>
+          <span class="tag" data-cy="todo-count">0 itens</span>
+        </div>
+        <ul class="todo-list" data-cy="todo-list"></ul>
+      </section>
+
+      <section class="card" data-cy="status-card">
+        <h2>Status do ambiente</h2>
+        <div class="status" data-cy="status-value">Carregando...</div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
